@@ -49,6 +49,16 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
+# Gemfile
+# [...]
+group :development, :test do
+  # [...]
+  # gem 'capybara'             # should be there already
+  # gem 'selenium-webdriver'   # should be there already
+  # gem 'chromedriver-helper'  # add it!
+  gem 'launchy'              # useful for screenshots, add it too!
+end
+
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
